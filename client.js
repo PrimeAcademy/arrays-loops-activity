@@ -117,3 +117,26 @@ while (numerals[numerals.length-1] === 0) {
     numerals.pop();
 }
 console.log('output of array', numerals);
+
+/**
+* 1. Create a largish array full of numbers, including at least two different
+* numbers that repeat (Example: [0, 2, 1, 2, 4, 1])
+* 2. Find the "greatest position distance" between repeating numbers in your
+* array.
+*
+* Example: In an array with the values [0, 2, 1, 2, 4, 1] the greatest position
+* distance is between the matching '1' values at index 2 and 5. Executing
+* greatestDistance against this array would return 3. (i.e. 5 - 2)
+**/
+
+let someNumbers = [0,5,4,3,2,1,2,3,4,5];
+let maxDistance = 0; 
+for (let i=0; i < someNumbers.length; i += 1) {
+    let number = someNumbers[i];
+    let distance = i - someNumbers.indexOf (number);
+    console.log(`number ${number}, ${distance}`);
+    if (distance > maxDistance){
+        maxDistance = distance;
+    }
+}
+console.log('max distance', maxDistance);
