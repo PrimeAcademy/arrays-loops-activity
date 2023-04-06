@@ -119,3 +119,4 @@ console.log(numbers2);
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
+
