@@ -7,6 +7,11 @@
  *    hobbies
  */
 
+let hobbies = ['playing video games', 'watching sports','traveling', 'listneing to music', 'working out'];
+for ( let hobby of hobbies) {
+    console.log(hobby);
+}
+console.log(hobbies.length);
 
 // Example output
 // 1. swimming
@@ -24,7 +29,16 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
+let colors = ['red', 'blue', 'green', 'teal', 'yellow', 'teal', 'teal'];
+let tealCount = 0;
 
+for (let color of colors) {
+    console.log(color);
+    if (color === 'teal') {
+        tealCount += 1;
+    }
+}
+console.log("Teal was found", tealCount, "times");
 
 // Example output
 // green, red, teal, orange, teal
@@ -47,6 +61,20 @@
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
 
+let numbers = [5,20,16,2,8]; 
+let oddNumbers = [];
+let evenNumbers = [];
+for (let number of numbers){
+    if (number %2) {
+        oddNumbers.push(number);
+    } else {
+        evenNumbers.push(number);
+    }
+}
+console.log('all numbers', numbers);
+console.log('odd numbers', oddNumbers);
+console.log('even numbers', evenNumbers);
+
 
 /**
  * #4 Flipping Switches
@@ -61,7 +89,13 @@
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
-
+let cars = [true, false, false, true];
+let trucks = [];
+for (let car of cars){
+    trucks.push(!car);
+}
+console.log('initial array', cars);
+console.log('toggled array', trucks);
 
 /**
  * #5 Remove 0's
@@ -77,3 +111,9 @@
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
+let numerals = [5, 8, 0, 0, 3, 0, 6, 2, 0, 0, 0];
+
+while (numerals[numerals.length-1] === 0) {
+    numerals.pop();
+}
+console.log('output of array', numerals);
