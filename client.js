@@ -7,6 +7,11 @@
  *    hobbies
  */
 
+let hobbies = ['Darts', 'Gaming', 'collecting', 'retro video games'];
+console.log('our hobbies are: ', hobbies );
+console.log('total hobbies: ', hobbies.length);
+
+
 
 // Example output
 // 1. swimming
@@ -24,6 +29,15 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
+let colors = ['teal', 'green', 'red', 'blue', 'teal'];
+let tealCount = 0;
+for (let color of colors) {
+    //logic to determine tealcount
+    if (color=='teal') {
+        tealCount++
+    }
+}
+console.log('the colors are', colors, 'teal was found: ' ,tealCount);
 
 
 // Example output
@@ -41,6 +55,21 @@
  * 4. Output the original array, odd number array and even number array
  */
 
+let numbers = [3, 7, 2, 8, 11, 4, 2];
+let oddNumbers = [];
+let evenNumbers = [];
+
+for (let number of numbers) { //going over the entire numbers array, each item is called "odd"
+    if (number % 2==0){
+        // is an even number
+        evenNumbers.push(number)
+    }
+    else {
+        oddNumbers.push(number)
+    }
+}
+
+console.log('number: ', numbers ,'odd numbers:' , oddNumbers ,'even numbers:' ,evenNumbers)
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
@@ -61,6 +90,20 @@
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
+let booleans = [true, false, true, true]
+let toggledArray = []
+
+for (let boolean of booleans ){
+    if (boolean != true){
+        toggledArray.push(true)
+    }
+    else if(boolean != false){
+        toggledArray.push(false)
+    }
+}
+
+console.log( booleans, toggledArray)
+
 
 
 /**
@@ -72,6 +115,15 @@
  *    NOTE: You should not need a second array here.
  * 3. Output the array
  */
+
+let otherNumbers = [3, 0, 2, 8, 0, 0, 0]
+
+for (let otherNumber of otherNumbers) {
+    if (otherNumber > 0){
+        otherNumbers.pop()
+    }
+}
+console.log(otherNumbers)
 
 
 // Example output
