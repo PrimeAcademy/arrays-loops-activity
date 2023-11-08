@@ -71,6 +71,8 @@
  * 2. Write a loop that removes 0 from the end of the array
  *    NOTE: You should not need a second array here.
  * 3. Output the array
+ *
+ * Hint: Try using a while loop for this one.
  */
 
 
@@ -80,18 +82,17 @@
 
 
 /**
- * #6 (STRETCH) Greatest Position Distance
+ * #6 (STRETCH) Highest & Lowest
  * --------------------
- * 1. Create a largish array of numbers, including at least two different
- *    numbers that repeat (e.g. 0, 2, 2, 7, 4, 1, 7, 8)
- * 2. Write a loop that finds the greatest position distance between
- *    repeating numbers in your array. In the above example, the 2's have
- *    a distance of 1, while the 7's have a distance of 3, so the
- *    greatest position distance for that array is 3.
- * 3. Output the array and its greatest position distance
+ * 1. Create a largish array of numbers (e.g. 2, 2, -3, 7, 4, 1, 7, 12, 8)
+ * 2. Create two variables high & low.
+ * 3. Loop over all numbers in the array keeping track of the highest
+      and lowest numbers.
+ * 3. Log the highest and lowest number to the console
  */
 
 
 // Example output
-// 5, 1, 8, 2, 9, 1, 4, 5, 0
-// Greatest Position Distance: 7
+// 2, 2, -3, 7, 4, 1, 7, 12, 8
+// High: 12
+// Low: -3
